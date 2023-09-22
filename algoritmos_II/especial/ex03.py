@@ -11,6 +11,19 @@ def transpor(matriz: list) -> list:
 
     return transposta
 
+def transpor_chatGpt(matriz):
+    num_linhas = len(matriz)
+    num_colunas = len(matriz[0])
+
+    transposta = [[0 for _ in range(num_linhas)] for _ in range(num_colunas)]
+
+    for i in range(num_linhas):
+        for j in range(num_colunas):
+            transposta[j][i] = matriz[i][j]
+
+    return transposta
+
+
 
 matriz = [
     [1, 7, 5],
